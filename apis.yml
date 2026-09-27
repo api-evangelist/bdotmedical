@@ -1,23 +1,61 @@
 aid: bdotmedical
+
 name: Bdotmedical
-description: 'Bdotmedical is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Bdotmedical is a healthcare technology company focused on providing advanced medical data analytics and telehealth integration solutions. It offers APIs that enable secure access to patient data, device telemetry, and analytics services for healthcare providers and developers. The platform aims to improve clinical decision-making and operational efficiency through interoperable, standards‑based interfaces.'
+
 url: https://raw.githubusercontent.com/api-evangelist/bdotmedical/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
-- Company
-apis: []
+- Healthcare
+- DataAnalytics
+- Telehealth
+- API
+- MedicalTech
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
-- type: Website
-  url: https://equityzen.com/company/bdotmedical
+
+  - type: Hosts
+    url: hosts/bdotmedical-hosts.yml
+  - type: Vendors
+    url: vendors/bdotmedical-vendors.yml
+  - type: DomainSecurity
+    url: security/bdotmedical-domain-security.yml
+  - type: Website
+    url: https://equityzen.com/company/bdotmedical
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: The provider's website renders only via JavaScript and no machine‑readable API spec was found.
+  evidence:
+    - url: https://bdotmed.co.jp/
+      status: 200
+  checked: '2026-09-27'
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

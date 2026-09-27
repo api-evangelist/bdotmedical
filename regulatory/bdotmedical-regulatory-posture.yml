@@ -1,0 +1,18 @@
+generated: '2026-09-27'
+method: probed
+source: https://bdotmed.co.jp/policy
+signals:
+  data_subject_request:
+    - source: https://bdotmed.co.jp/policy
+      http_status: 200
+      fetched: true
+      quote: "当社は、(i)提供者様から提供いただいた個人情報の開示、(ii)その利用目的の通知、(iii)当社が提供者様の同意を得て第三者に提供したご提供者様の個人情報に関する記録の開示、または(iv)当社が第三者から提供を受けたご提供者様の個人情報に関する記録の開示を求められた際は、本人確認の上、これを開示または通知します。"
+      section: "個人情報の開示"
+      note: "Describes how data subjects can request access to their personal data, subject to identity verification and a fee."
+  subprocessors:
+    - source: https://bdotmed.co.jp/policy
+      http_status: 200
+      fetched: true
+      quote: "当社は、法令に定められた場合を除いて、あらかじめ提供者様の同意を得ることなく、第三者に個人情報を提供することはありません。"
+      section: "個人情報の第三者提供"
+      note: "States that personal data will not be shared with third parties without prior consent, indicating a stance on subprocessors."
